@@ -1,8 +1,8 @@
 class SwiftuiSemanticAudit < Formula
   desc "Inspect SwiftUI state ownership and data flow"
   homepage "https://github.com/potapenko/swiftui-semantic-audit"
-  url "file:///private/tmp/swiftui-semantic-audit-0.4.0.tar.gz"
-  sha256 "c15ce1ba9bb33495c3a8664b2835e7b1be29cfcba01780061cd778c724bcaa53"
+  url "https://github.com/potapenko/swiftui-semantic-audit/releases/download/0.4.0/swiftui-semantic-audit-0.4.0.tar.gz"
+  sha256 "e314379b9cf67f1d5d6ccf3e8b9dce9b10d4a619c6af9eff4d39af0f4a8f08d3"
   license "MIT"
 
   depends_on xcode: ["26.6", :build]

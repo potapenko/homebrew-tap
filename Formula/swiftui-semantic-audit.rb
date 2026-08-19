@@ -30,9 +30,7 @@ class SwiftuiSemanticAudit < Formula
       }
     SWIFT
 
-    report = JSON.parse(shell_output(
-      "#{bin}/swiftui-audit audit #{testpath} --syntax-only --format json",
-    ))
+    report = JSON.parse(shell_output("#{bin}/swiftui-audit audit #{testpath} --syntax-only --format json"))
     assert_equal version.to_s, report.fetch("toolVersion")
     assert_equal 2, report.fetch("schemaVersion")
     assert_equal "syntax-only", report.fetch("resolution")
